@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {/* Header */}
       <header className="bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg">
         <div className="container mx-auto px-6 py-5 flex justify-between items-center flex-wrap">
-          <h1 className="text-3xl font-bold tracking-wide mb-4 sm:mb-0">Google Books Search</h1>
+          <h1 className="text-3xl font-bold tracking-wide mb-4 sm:mb-0">Google Books</h1>
           <div className="flex flex-wrap justify-center sm:justify-end space-x-4">
             <button className="bg-blue-500 hover:bg-blue-700 transition-colors px-4 py-2 rounded-full font-medium shadow-md mb-2 sm:mb-0">
               About
