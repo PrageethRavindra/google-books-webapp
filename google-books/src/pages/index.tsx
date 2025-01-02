@@ -41,7 +41,7 @@ export default function Home() {
     <Layout>
       <div className="bg-gradient-to-r from-teal-500 to-blue-600 min-h-screen">
         <Header onSearch={handleSearch} />
-        <main className="container mx-auto py-10 px-6">
+        <main className="container mx-auto py-6 sm:py-10 px-4 sm:px-6 lg:px-8">
           {loading ? (
             <div className="flex justify-center items-center h-96">
               <div className="text-white text-lg font-medium animate-pulse">
@@ -53,7 +53,7 @@ export default function Home() {
               {error}
             </div>
           ) : books.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
               {books.map((book, index) => (
                 <BooksCard key={index} book={book} />
               ))}
